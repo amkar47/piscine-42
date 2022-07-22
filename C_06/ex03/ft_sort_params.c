@@ -1,29 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncomp.c                                      :+:      :+:    :+:   */
+/*   ft_sort_params.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: namath <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/17 08:55:01 by namath            #+#    #+#             */
-/*   Updated: 2022/07/22 15:42:06 by namath           ###   ########lyon.fr   */
+/*   Created: 2022/07/22 11:43:45 by namath            #+#    #+#             */
+/*   Updated: 2022/07/22 16:01:56 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+#include <unistd.h>
+
+int	ft_putstr(char *str)
 {
 	int	i;
 
 	i = 0;
-	while (1 < n - 1 && s1[i] && s2[i])
+	while (str[i] != '\0')
 	{
+		write(1, &str[i], 1);
 		i++;
-		while (s1[i] == s2[i] && s1[i] != 0 && s2[i] != 0)
-		{
-			i++;
-			if (s1[i] != s2[i])
-				return (s1[i] - s2[i]);
-		}
 	}
-	return (s1[i] - s2[i]);
+	return (0);
+}
+
+int	main(int argc, char **argv)
+{
+	int	i;
+
+	i = 1;
+	while (i < argc)
+	{
+		ft_putstr(argv[i]);
+		write(1, "\n", 1);
+		i++;
+	}
+	return (0);
 }

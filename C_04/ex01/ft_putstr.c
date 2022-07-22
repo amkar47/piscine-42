@@ -6,13 +6,13 @@
 /*   By: namath <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 09:23:53 by namath            #+#    #+#             */
-/*   Updated: 2022/07/19 09:35:00 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/22 15:47:16 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }

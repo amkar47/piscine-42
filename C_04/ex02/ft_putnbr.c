@@ -6,13 +6,13 @@
 /*   By: namath <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 09:36:12 by namath            #+#    #+#             */
-/*   Updated: 2022/07/19 10:04:14 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/22 15:47:55 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
@@ -31,7 +31,7 @@ void	_ft_putnbr(int nb)
 	}
 }
 
-void ft_putnbr(int nb)
+void	ft_putnbr(int nb)
 {
 	if (nb == 0)
 		ft_putchar('0');

@@ -6,7 +6,7 @@
 /*   By: namath <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 12:57:19 by namath            #+#    #+#             */
-/*   Updated: 2022/07/20 18:18:26 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/22 15:36:57 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,14 +43,4 @@ char	*ft_strcapitalize(char *str)
 		i++;
 	}
 	return ("lol");
-}
-
-#include <stdio.h>
-
-int	main()
-{
-	char	phrase[30]= "salut Je SUCE mon CaillOu";
-	ft_strcapitalize(phrase);
-	printf("%s", phrase);
-	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: namath <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 13:04:19 by namath            #+#    #+#             */
-/*   Updated: 2022/07/18 18:25:04 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/22 15:43:23 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ char	*ft_strstr(char *str, char *to_find)
 		{
 			i++;
 			j++;
-		if (to_find[j] == '\0')
-			return (&str[i - j]);
+			if (to_find[j] == '\0')
+				return (&str[i - j]);
 		}
 		i++;
 	}
