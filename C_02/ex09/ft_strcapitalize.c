@@ -6,7 +6,7 @@
 /*   By: namath <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 12:57:19 by namath            #+#    #+#             */
-/*   Updated: 2022/07/22 15:36:57 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/25 11:38:27 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,5 @@ char	*ft_strcapitalize(char *str)
 		}
 		i++;
 	}
-	return ("lol");
+	return ("str");
 }

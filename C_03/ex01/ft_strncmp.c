@@ -3,20 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncomp.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: namath <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: namath <namath@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/17 08:55:01 by namath            #+#    #+#             */
-/*   Updated: 2022/07/22 15:42:06 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/26 22:52:31 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	int	i;
+	unsigned	i;
 
 	i = 0;
 	while (1 < n - 1 && s1[i] && s2[i])
 	{
+		if (n == 0)
+			return (0);
 		i++;
 		while (s1[i] == s2[i] && s1[i] != 0 && s2[i] != 0)
 		{

@@ -1,40 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_params.c                                    :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: namath <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: namath <namath@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/22 10:44:31 by namath            #+#    #+#             */
-/*   Updated: 2022/07/27 07:16:12 by namath           ###   ########lyon.fr   */
+/*   Created: 2022/07/26 10:19:31 by namath            #+#    #+#             */
+/*   Updated: 2022/07/26 22:55:24 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdlib.h>
 
-int	ft_putstr(char *str)
+int	ft_strlen(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
-	{
-		write(1, &str[i], 1);
 		i++;
-	}
-	return (0);
+	return (i);
 }
 
-int	main(void argc, char **argv)
+char	*ft_strdup(char *src)
 {
-	int	i;
+	int		i;
+	char	*str;
 
-	i = argc - 1;
-	while (i >= 1)
+	str = malloc(sizeof(char) * (ft_strlen(src) + 1));
+	if (str == NULL)
+		return (NULL);
+	i = 0;
+	while (i < ft_strlen(src))
 	{
-		ft_putstr(argv[i]);
-		write(1, "\n", 1);
-		i--;
+		str[i] = src[i];
+		i++;
 	}
-	return (0);
+	str[i] = '\0';
+	return (str);
 }

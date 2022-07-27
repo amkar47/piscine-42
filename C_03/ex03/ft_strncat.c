@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: namath <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: namath <namath@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 11:06:17 by namath            #+#    #+#             */
-/*   Updated: 2022/07/18 13:05:42 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/26 22:51:24 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int	i;
-	int	j;
+	unsigned	i;
+	unsigned	j;
 
 	i = 0;
 	j = 0;

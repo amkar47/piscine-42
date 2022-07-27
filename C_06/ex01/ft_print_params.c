@@ -6,7 +6,7 @@
 /*   By: namath <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/22 10:05:29 by namath            #+#    #+#             */
-/*   Updated: 2022/07/22 15:59:44 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/27 07:15:56 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_putstr(char *str)
 	return (0);
 }
 
-int	main(int argc, char **argv)
+int	main(void argc, char **argv)
 {
 	int	i;
 

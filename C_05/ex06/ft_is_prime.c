@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: namath <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/19 15:11:53 by namath            #+#    #+#             */
-/*   Updated: 2022/07/27 07:11:01 by namath           ###   ########lyon.fr   */
+/*   Created: 2022/07/24 14:36:58 by namath            #+#    #+#             */
+/*   Updated: 2022/07/26 10:18:34 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
+int	ft_is_prime(int nb)
 {
-	int	i;
+	long	i;
 
-	i = nb - 1;
-	if (nb < 0)
+	i = 2;
+	if (nb <= 1)
 		return (0);
-	if (i == 0)
-		return (1);
-	while (i > 1)
+	while (i < 46341 && i <= nb / i)
 	{
-		nb *= i;
-		i--;
+		if (nb % i == 0)
+			return (0);
+		i++;
 	}
-	return (nb);
+	return (1);
 }
