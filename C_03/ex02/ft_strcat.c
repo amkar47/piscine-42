@@ -6,7 +6,7 @@
 /*   By: namath <namath@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 09:23:33 by namath            #+#    #+#             */
-/*   Updated: 2022/07/26 22:51:34 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/27 08:42:13 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ char	*ft_strcat(char *dest, char *src)
 		i++;
 		j++;
 	}
-	dest[i + j] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }

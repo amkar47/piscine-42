@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rev_params.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: namath <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: namath <namath@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/22 10:44:31 by namath            #+#    #+#             */
-/*   Updated: 2022/07/27 07:16:12 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/27 11:14:30 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_putstr(char *str)
 	return (0);
 }
 
-int	main(void argc, char **argv)
+int	main(int argc, char **argv)
 {
 	int	i;
 

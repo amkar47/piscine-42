@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: namath <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: namath <namath@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 12:57:19 by namath            #+#    #+#             */
-/*   Updated: 2022/07/25 11:38:27 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/27 13:50:25 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,5 @@ char	*ft_strcapitalize(char *str)
 		}
 		i++;
 	}
-	return ("str");
+	return (str);
 }

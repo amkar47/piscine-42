@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: namath <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: namath <namath@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 10:06:59 by namath            #+#    #+#             */
-/*   Updated: 2022/07/22 15:53:25 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/27 08:53:57 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ int	ft_atoi(char *str)
 	}
 	while (str[i] != '\0' && (str[i] >= '0' && str[i] <= '9'))
 	{	
-		j = j * 10 + str[i] - '0';
+		j = j * 10 + (str[i] - '0') * sign;
 		i++;
 	}
-	return (j * sign);
+	return (j);
 }

@@ -6,7 +6,7 @@
 /*   By: namath <namath@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/22 11:43:45 by namath            #+#    #+#             */
-/*   Updated: 2022/07/27 07:18:05 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/27 11:15:05 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ void	ft_sort_params(int size, char **argv)
 	}
 }
 
-int	main(void argc, char **argv)
+int	main(int argc, char **argv)
 {
 	int	i;
 

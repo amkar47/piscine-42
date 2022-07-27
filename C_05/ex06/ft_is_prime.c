@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: namath <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: namath <namath@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 14:36:58 by namath            #+#    #+#             */
-/*   Updated: 2022/07/26 10:18:34 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/27 11:15:35 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_is_prime(int nb)
 {
-	long	i;
+	long int	i;
 
 	i = 2;
 	if (nb <= 1)
