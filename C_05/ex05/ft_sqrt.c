@@ -6,7 +6,7 @@
 /*   By: namath <namath@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 18:18:59 by namath            #+#    #+#             */
-/*   Updated: 2022/07/27 08:56:52 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/28 16:52:24 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@ int	ft_sqrt(int nb)
 {
 	int	i;
 
-	i = 1;
-	if (nb == 0)
+	i = 0;
+	if (nb <= 0)
 		return (0);
-	while (nb / i > i)
-	{
+	if (nb == 1)
+		return (1);
+	while (i * i < nb && i < 46341)
 		i++;
-		if ((nb % i) == 0)
-			return (i);
-	}
+	if (i * i == nb)
+		return (i);
 	return (0);
 }
