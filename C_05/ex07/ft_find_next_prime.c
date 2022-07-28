@@ -1,30 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: namath <namath@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/26 22:55:51 by namath            #+#    #+#             */
-/*   Updated: 2022/07/27 18:59:55 by namath           ###   ########lyon.fr   */
+/*   Created: 2022/07/28 08:52:41 by namath            #+#    #+#             */
+/*   Updated: 2022/07/28 09:10:01 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-int	*ft_range(int min, int max)
+int	ft_is_prime(int nb)
 {
-	int	i;
-	int	*tab;
+	long int	i;
 
-	i = 0;
-	if (min >= max)
-		return (1);
-	tab = malloc(sizeof(char) * (ft_range() + 1));
-	if (tab == NULL)
-		return (NULL);
-	while (tab[i] != *tab)
-	{	
+	i = 2;
+	if (nb <= 1)
+		return (0);
+	while (i < 46341 && i <= nb / i)
+	{
+		if (nb % i == 0)
+			return (0);
 		i++;
 	}
+	return (1);
+}
+
+int	ft_find_next_prime(int nb)
+{
+	while (!ft_is_prime(nb))
+		nb++;
+	return (nb);
 }

@@ -6,7 +6,7 @@
 /*   By: namath <namath@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/21 15:28:32 by namath            #+#    #+#             */
-/*   Updated: 2022/07/27 11:13:46 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/28 00:16:27 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ int	ft_putstr(char *str)
 
 int	main(int argc, char *argv[])
 {
+	(void) argc;
 	ft_putstr(argv[0]);
 	write(1, "\n", 1);
 	return (0);

@@ -6,7 +6,7 @@
 /*   By: namath <namath@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 10:06:59 by namath            #+#    #+#             */
-/*   Updated: 2022/07/27 08:53:57 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/28 00:10:17 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,12 @@ int	ft_atoi(char *str)
 	{
 		if (str[i] == '-')
 			sign *= -1;
-			i++;
+		i++;
 	}
 	while (str[i] != '\0' && (str[i] >= '0' && str[i] <= '9'))
 	{	
-		j = j * 10 + (str[i] - '0') * sign;
+		j = j * 10 + (str[i] - '0');
 		i++;
 	}
-	return (j);
+	return (j * sign);
 }

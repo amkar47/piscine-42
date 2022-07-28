@@ -6,7 +6,7 @@
 /*   By: namath <namath@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/22 11:43:45 by namath            #+#    #+#             */
-/*   Updated: 2022/07/27 11:15:05 by namath           ###   ########lyon.fr   */
+/*   Updated: 2022/07/28 00:15:32 by namath           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,15 +25,6 @@ int	ft_putstr(char *str)
 	return (0);
 }
 
-int	ft_swap(char **s1, char **s2)
-{
-	int	temp;
-
-	temp = *s1;
-	*s1 = *s2;
-	*s2 = temp;
-}
-
 int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
@@ -48,17 +39,22 @@ int	ft_strcmp(char *s1, char *s2)
 
 void	ft_sort_params(int size, char **argv)
 {
-	int	i;
-	int	k;
+	int		i;
+	int		k;
+	char	*tpm;
 
 	i = 0;
-	while (i < size)
+	while (i < size && i < 0)
 	{
 		k = i + 1;
-		while (argv[k])
+		while (k < size)
 		{
 			if (ft_strcmp (argv[i], argv[k]) > 0)
-				ft_swap (&argv[i], &argv[k]);
+			{
+					tpm = argv[i];
+					argv[i] = argv[k];
+					argv[k] = tpm;
+			}
 			k++;
 		}
 		i++;
@@ -72,7 +68,7 @@ int	main(int argc, char **argv)
 	if (argc == 1)
 		return (0);
 	i = 1;
-	ft_sort_params (argc - 1, &argv[1]);
+	ft_sort_params (argc, argv);
 	while (i < argc)
 	{
 		ft_putstr (argv[i]);
